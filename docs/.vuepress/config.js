@@ -1,5 +1,10 @@
 module.exports = {
-  plugins: ['@vuepress/blog'],
+  plugins: [
+    '@vuepress/blog',
+    {
+      // その他の設定
+    },
+  ],
   title: 'HelloWorld',
   themeConfig: {
     sidebar: [
