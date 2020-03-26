@@ -1,5 +1,6 @@
 module.exports = {
   title: 'HelloWorld',
+  plugins: ['@vuepress/last-updated'],
   themeConfig: {
     sidebar: [
       {
