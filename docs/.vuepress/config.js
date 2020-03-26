@@ -2,6 +2,12 @@ module.exports = {
   head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
   plugins: [
     [
+      '@vuepress/blog',
+      {
+        // その他の設定
+      },
+    ],
+    [
       '@vuepress/pwa',
       {
         serviceWorker: true,
