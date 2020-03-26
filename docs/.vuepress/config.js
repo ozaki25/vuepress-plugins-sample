@@ -7,6 +7,7 @@ module.exports = {
         // その他の設定
       },
     ],
+    ['@vuepress/medium-zoom'],
     [
       '@vuepress/pwa',
       {
