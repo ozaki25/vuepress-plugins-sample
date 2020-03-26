@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['@vuepress/medium-zoom'],
   title: 'HelloWorld',
   themeConfig: {
     sidebar: [
