@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "vuepress": "^1.4.0"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.4.0"
   }
 }
