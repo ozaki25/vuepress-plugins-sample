@@ -1,5 +1,4 @@
 module.exports = {
-  plugins: ['@vuepress/register-components'],
   title: 'HelloWorld',
   themeConfig: {
     sidebar: [
