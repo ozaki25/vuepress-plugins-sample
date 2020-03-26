@@ -1,4 +1,12 @@
 module.exports = {
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        ga: '', // UA-00000000-0
+      },
+    ],
+  ],
   title: 'HelloWorld',
   themeConfig: {
     sidebar: [
