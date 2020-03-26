@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['@vuepress/back-to-top'],
   title: 'HelloWorld',
   themeConfig: {
     sidebar: [
