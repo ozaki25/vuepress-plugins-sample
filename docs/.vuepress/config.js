@@ -1,5 +1,39 @@
+const dayjs = require('dayjs');
+
 module.exports = {
-  plugins: ['@vuepress/active-header-links'],
+  head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
+  plugins: [
+    ['@vuepress/active-header-links'],
+    ['@vuepress/back-to-top'],
+    [
+      '@vuepress/blog',
+      {
+        // その他の設定
+      },
+    ],
+    [
+      '@vuepress/google-analytics',
+      {
+        ga: '', // UA-00000000-0
+      },
+    ],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          return dayjs(timestamp).format('YYYY/MM/DD H時m分');
+        },
+      },
+    ],
+    ['@vuepress/medium-zoom'],
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true,
+      },
+    ],
+  ],
   title: 'HelloWorld',
   themeConfig: {
     sidebar: [
