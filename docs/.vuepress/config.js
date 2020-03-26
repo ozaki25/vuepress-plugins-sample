@@ -1,9 +1,34 @@
+const dayjs = require('dayjs');
+
 module.exports = {
+  head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
   plugins: [
+    [
+      '@vuepress/blog',
+      {
+        // その他の設定
+      },
+    ],
     [
       '@vuepress/google-analytics',
       {
         ga: '', // UA-00000000-0
+      },
+    ],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          return dayjs(timestamp).format('YYYY/MM/DD H時m分');
+        },
+      },
+    ],
+    ['@vuepress/medium-zoom'],
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true,
       },
     ],
   ],
