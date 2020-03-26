@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['@vuepress/active-header-links'],
   title: 'HelloWorld',
   themeConfig: {
     sidebar: [
