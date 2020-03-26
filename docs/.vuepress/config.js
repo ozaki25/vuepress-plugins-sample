@@ -10,6 +10,12 @@ module.exports = {
       },
     ],
     [
+      '@vuepress/google-analytics',
+      {
+        ga: '', // UA-00000000-0
+      },
+    ],
+    [
       '@vuepress/last-updated',
       {
         transformer: (timestamp, lang) => {
