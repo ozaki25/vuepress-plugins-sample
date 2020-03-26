@@ -3,7 +3,6 @@ const dayjs = require('dayjs');
 module.exports = {
   head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
   plugins: [
-    ['@vuepress/active-header-links'],
     ['@vuepress/back-to-top'],
     [
       '@vuepress/blog',
