@@ -1,4 +1,5 @@
 module.exports = {
+  head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
   plugins: [
     [
       '@vuepress/blog',
@@ -6,7 +7,15 @@ module.exports = {
         // その他の設定
       },
     ],
-  ],  title: 'HelloWorld',
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true,
+      },
+    ],
+  ],
+  title: 'HelloWorld',
   themeConfig: {
     sidebar: [
       {
