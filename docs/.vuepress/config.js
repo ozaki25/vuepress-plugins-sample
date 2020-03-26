@@ -1,4 +1,5 @@
 module.exports = {
+  head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
   plugins: [
     [
       '@vuepress/pwa',
