@@ -1,6 +1,23 @@
 const dayjs = require('dayjs');
 
 module.exports = {
+  head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
+  plugins: [
+    [
+      '@vuepress/blog',
+      {
+        // その他の設定
+      },
+    ],
+    ['@vuepress/medium-zoom'],
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true,
+      },
+    ],
+  ],
   title: 'HelloWorld',
   plugins: [
     [
