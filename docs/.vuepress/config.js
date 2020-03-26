@@ -1,6 +1,17 @@
+const dayjs = require('dayjs');
+
 module.exports = {
   title: 'HelloWorld',
-  plugins: ['@vuepress/last-updated'],
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          return dayjs(timestamp).format('YYYY/MM/DD H時m分');
+        },
+      },
+    ],
+  ],
   themeConfig: {
     sidebar: [
       {
