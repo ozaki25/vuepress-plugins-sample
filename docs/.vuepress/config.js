@@ -1,5 +1,4 @@
 module.exports = {
-  plugins: ['@vuepress/nprogress'],
   title: 'HelloWorld',
   themeConfig: {
     sidebar: [
