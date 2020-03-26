@@ -1,4 +1,14 @@
 module.exports = {
+  head: [['link', { rel: 'manifest', href: '/manifest.json' }]],
+  plugins: [
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: true,
+      },
+    ],
+  ],
   title: 'HelloWorld',
   themeConfig: {
     sidebar: [
